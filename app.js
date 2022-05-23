@@ -11,7 +11,7 @@ app.get('/about',(req,res) => {
   res.render('about', {page:'about'});
 });
 app.get('/courses',(req,res) => {
-  res.render('courses', {page:'contact'});
+  res.render('courses', {page:'courses'});
 });
 app.get('/contact',(req,res) => {
   res.render('contact', {page:'contact'});
