@@ -16,7 +16,20 @@ app.get('/courses',(req,res) => {
 app.get('/contact',(req,res) => {
   res.render('contact', {page:'contact'});
 });
+app.get('/facebook',(req,res) => {
+  res.redirect('https://facebook.com/drivein');
+});
+app.get('/twitter',(req,res) => {
+  res.redirect('https://twitter.com/drivein');
+});
+app.get('/linkedin',(req,res) => {
+  res.redirect('https://linkedin.com/in/drivein');
+});
+app.get('/instagram',(req,res) => {
+  res.redirect('https://instagram.com/drivein');
+});
 app.get('*',(req,res) => {
   res.render('404', {page:''});
 });
+
 app.listen(port);
