@@ -28,8 +28,13 @@ app.get('/linkedin',(req,res) => {
 app.get('/instagram',(req,res) => {
   res.redirect('https://instagram.com/drivein');
 });
+app.get('/youtube',(req,res) => {
+  res.redirect('https://youtube.com/drivein');
+});
 app.get('*',(req,res) => {
   res.render('404', {page:''});
 });
 
-app.listen(port);
+app.listen(port, ()=> {
+  console.log(`liostening on http://localhost${port}`);
+});
