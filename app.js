@@ -36,5 +36,5 @@ app.get('*',(req,res) => {
 });
 
 app.listen(port, ()=> {
-  console.log(`liostening on http://localhost${port}`);
+  console.log(`listening on http://localhost:${port}`);
 });
